@@ -48,7 +48,7 @@ section.row+section.row{border-top:1px solid rgba(245,220,188,.3)}
   text-transform:uppercase;line-height:1.35;overflow-wrap:anywhere}
 .cover .label{display:flex;align-items:center;padding-top:0}
 .cover .label b{position:static}
-.cover .main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;padding:0 18px 14vh 22px}
+.cover .main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;min-height:100svh;padding:0 18px 0 22px}
 .brand{width:100%;min-width:0;margin:0}
 .logo{display:block;width:100%;max-width:370px;height:auto;margin:0}
 @media(max-width:600px){.brand{overflow:hidden}.cover .logo{width:70%;transform:translateX(-8.5%)}}
@@ -133,6 +133,8 @@ footer .dl span{font-size:14px;letter-spacing:0;text-transform:none}
   .items{padding:20mm 12mm 20mm 10mm}
   .item{break-inside:avoid}
   .cover .main{padding-bottom:0}
+  .cover .brand{overflow:hidden}
+  .cover .logo{width:70mm;max-width:100%;transform:translateX(-8.5%)}
   footer{min-height:296mm;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;break-before:page}
   footer .logo{width:70mm}
   .river{width:100%;height:38mm;left:auto;margin:10mm 0 6mm}
