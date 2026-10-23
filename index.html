@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt" data-l="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu | Rio Restaurante & Bar</title>
+<meta name="description" content="Menu digital do Rio Restaurante &amp; Bar: entradas, grelhados, vinhos, cocktails e muito mais. Disponível em português e inglês.">
+<meta name="theme-color" content="#17632a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f7a2c'/%3E%3Ctext x='32' y='46' font-size='40' font-weight='700' text-anchor='middle' fill='%23f5dcbc' font-family='Arial,sans-serif'%3ER%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rio Restaurante &amp; Bar">
+<meta property="og:title" content="Menu | Rio Restaurante &amp; Bar">
+<meta property="og:description" content="Veja o menu completo do Rio: pratos, bebidas, vinhos e cocktails. Onde vibe acontece.">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://SEU-DOMINIO/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rio Restaurante &amp; Bar - Menu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Menu | Rio Restaurante &amp; Bar">
+<meta name="twitter:description" content="Veja o menu completo do Rio: pratos, bebidas, vinhos e cocktails. Onde vibe acontece.">
+<meta name="twitter:image" content="https://SEU-DOMINIO/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#1f7a2c;--g2:#17632a;--g3:#0f4a1e;--cream:#f5dcbc;--lc:clamp(104px,30vw,260px);
+  color-scheme:dark;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+html[data-l="pt"] .en,html[data-l="en"] .pt{display:none}
+body{margin:0;min-height:100%;font-family:'Montserrat',system-ui,sans-serif;color:var(--cream);
+  background:linear-gradient(170deg,var(--g1),var(--g2) 45%,var(--g3)) fixed;background-color:var(--g2)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+button{font:inherit;color:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.glass{background:linear-gradient(120deg,rgba(255,255,255,.18),rgba(255,255,255,.06));backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);
+  border:1px solid rgba(245,220,188,.5);box-shadow:0 10px 30px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.25)}
+#lang{position:fixed;z-index:20;top:calc(12px + env(safe-area-inset-top,0px));right:12px;display:flex;padding:3px;border-radius:999px}
+#lang button{border:0;background:none;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700}
+#lang button[aria-pressed="true"]{background:var(--cream);color:var(--g3)}
+.row{display:grid;grid-template-columns:var(--lc) minmax(0,1fr);max-width:960px;margin:0 auto}
+section.row{min-height:100svh;scroll-snap-align:start}
+section.row+section.row{border-top:1px solid rgba(245,220,188,.3)}
+.cover{min-height:100svh;scroll-snap-align:start}
+.label{border-right:1.5px solid var(--cream);padding:calc(50svh - 49px) 8px 0 14px}
+.label b{display:block;font-size:clamp(10.5px,2.9vw,16px);font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;line-height:1.35;overflow-wrap:anywhere}
+.cover .label{display:flex;align-items:center;padding-top:0}
+.cover .label b{position:static}
+.cover .main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 18px 14vh 22px}
+.logo{margin:0;font-family:'Comfortaa','Montserrat',sans-serif;font-weight:700;font-size:clamp(92px,28vw,170px);line-height:.9;letter-spacing:-.02em}
+.sub{margin:16px 0 32px;font-size:clamp(10px,2.8vw,13px);font-weight:500;letter-spacing:.14em;text-transform:uppercase;line-height:1.7}
+.btn{color:var(--cream);text-decoration:none;font-weight:600;font-size:14px;padding:12px 24px;border:1.5px solid var(--cream);border-radius:999px}
+.btn:hover{background:var(--cream);color:var(--g3)}
+.items{display:flex;flex-direction:column;justify-content:center;padding:64px 16px 140px 20px}
+.item{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;margin:0 0 clamp(18px,3.2svh,28px)}
+.item:last-child{margin-bottom:0}
+.item{position:relative}
+.chalk{position:absolute;pointer-events:none;overflow:visible;z-index:2;transition:opacity .7s}
+.chalk.fade{opacity:0}
+.chalk path{fill:none;stroke:#fffaf0;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;filter:url(#rough)}
+.search{position:relative;z-index:6;width:100%;max-width:360px;margin-top:18px}
+.sbox{display:flex;align-items:center;gap:10px;padding:0 16px;height:48px;border-radius:999px}
+.sbox svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.sbox input{flex:1;width:0;min-width:0;background:none;border:0;outline:0;-webkit-appearance:none;appearance:none;color:var(--cream);font:500 16px 'Montserrat',sans-serif}
+.sbox input::placeholder{color:var(--cream);opacity:.75}
+.sbox:focus-within{border-color:#fff}
+#res{position:absolute;top:calc(100% + 8px);left:0;right:0;border-radius:20px;background:rgba(15,74,30,.96);border:1px solid rgba(245,220,188,.5);max-height:42svh;overflow-y:auto;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+#res[hidden]{display:none}
+#res button{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid rgba(245,220,188,.18);padding:12px 16px}
+#res button:first-child{border-top:0}
+#res b{display:block;font-size:14px;font-weight:600}
+#res small{font-size:11px;opacity:.85}
+#res i{font-style:normal;font-weight:700;font-size:13px;white-space:nowrap}
+#res p{margin:0;padding:14px 16px;font-size:13px}
+.item h3{margin:0;font-size:clamp(15px,4vw,18px);font-weight:700;line-height:1.25}
+.item p{margin:4px 0 0;font-size:12.5px;font-weight:400;line-height:1.45;opacity:.92}
+.meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
+.meta small{font-size:11px;font-weight:500}
+.price{font-size:clamp(16px,4.2vw,20px);font-weight:700;white-space:nowrap}
+.price i{font-style:normal;font-size:.6em;font-weight:500;margin-left:3px}
+.ig{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:10px 20px;border-radius:999px;background:var(--cream);color:var(--g3);text-decoration:none;font-size:14px;font-weight:700}
+.ig svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ig:hover{opacity:.9}
+footer .ig{margin:18px 0 0}
+footer .ig span{font-size:14px;letter-spacing:0;text-transform:none}
+footer{max-width:960px;margin:0 auto;padding:30px 24px calc(190px + env(safe-area-inset-bottom,0px));text-align:center}
+footer b{display:block;font-family:'Comfortaa',sans-serif;font-size:44px;line-height:1}
+footer span{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+#dock{position:fixed;z-index:10;left:0;right:0;bottom:calc(12px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none}
+#dock>*{pointer-events:auto}
+#dock{transition:opacity .25s,transform .25s,visibility .25s}
+#dock.off{opacity:0;transform:translateY(24px);visibility:hidden}
+#dock.off>*{pointer-events:none}
+#subs{position:relative;display:flex;gap:6px;width:min(92vw,460px);overflow-x:auto;scrollbar-width:none;padding:2px}
+#subs::-webkit-scrollbar{display:none}
+#subs[hidden]{display:none}
+#subs button{flex:none;border:1px solid rgba(245,220,188,.5);background:rgba(15,74,30,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:500}
+#subs button.on{background:var(--cream);color:var(--g3);font-weight:700}
+#pill{display:flex;width:min(92vw,460px);padding:7px 8px;border-radius:999px}
+#pill button{flex:1;min-width:0;border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;border-radius:999px;font-size:10.5px;font-weight:600;transition:background .2s}
+#pill svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#pill button.on{background:rgba(255,255,255,.24);color:#fff}
+@media(min-width:700px){.items{padding:64px 40px 140px 44px}.label{padding-left:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.fbtns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
+.fbtns .ig,.fbtns .dl{margin:0}
+.dl{display:inline-flex;align-items:center;gap:8px;background:none;border:1.5px solid var(--cream);color:var(--cream);padding:10px 20px;border-radius:999px;font:600 14px 'Montserrat',sans-serif;cursor:pointer}
+.dl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.dl:hover{background:var(--cream);color:var(--g3)}
+footer .dl span{font-size:14px;letter-spacing:0;text-transform:none}
+@page{size:A4;margin:0}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html,body{background:#17632a!important}
+  body::before,#dock,#lang,.search,.cover .btn,.dl,.chalk{display:none!important}
+  :root{--lc:62mm}
+  .row{max-width:none}
+  .cover{min-height:296mm;break-after:page}
+  section.row{min-height:296mm;break-after:page;border-top:0}
+  .label{padding-top:144mm}
+  .label b{font-size:20px}
+  .item h3{font-size:22px}
+  .item p{font-size:15px}
+  .meta small{font-size:13px}
+  .price{font-size:22px}
+  .items{padding:20mm 12mm 20mm 10mm}
+  .item{break-inside:avoid}
+  .cover .main{padding-bottom:0}
+  footer{min-height:296mm;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;break-before:page}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="rough" x="-5%" y="-15%" width="110%" height="130%"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4" result="d"/><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="1" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 3 -.8" result="ga"/><feComposite in="d" in2="ga" operator="in"/></filter></svg>
+<div id="lang" class="glass" role="group" aria-label="Idioma / Language"><button data-l="pt" aria-pressed="true">PT</button><button data-l="en" aria-pressed="false">EN</button></div>
+<header class="row cover" id="top" data-i="-1">
+  <div class="label"><b>Menu</b></div>
+  <div class="main"><h1 class="logo">Rio</h1>
+    <p class="sub"><span class="pt">Restaurante &amp; Bar<br>Onde vibe acontece</span><span class="en">Restaurant &amp; Bar<br>Where the vibe happens</span></p>
+    <a class="btn" href="#c0"><span class="pt">Ver o menu</span><span class="en">View menu</span></a>
+    <a class="ig" href="https://www.instagram.com/riorestauranteebar?exln=MWljdWY0emJ3Ymh3eg==" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><span class="pt">Seguir</span><span class="en">Follow</span></a>
+    <div class="search"><label class="sbox glass"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Algo em mente?" aria-label="Pesquisar / Search"></label><div id="res" hidden></div></div></div>
+</header>
+<main id="list"></main>
+<footer><b>Rio</b><span>Restaurante &amp; Bar</span>
+  <div class="fbtns"><a class="ig" href="https://www.instagram.com/riorestauranteebar?exln=MWljdWY0emJ3Ymh3eg==" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><span class="pt">Seguir no Instagram</span><span class="en">Follow on Instagram</span></a><button class="dl" id="dl" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16"/></svg><span class="pt">Baixar menu (PDF)</span><span class="en">Download menu (PDF)</span></button></div></footer>
+<div id="dock" class="off"><div id="subs" hidden></div><nav id="pill" class="glass" aria-label="Categorias / Categories"></nav></div>
+<script>
+// Cada categoria: [nome, [[item, detalhe, preço em MT], ...]]
+const MENU=[
+["Entradas",[["Chamussas","",200],["Rissóis de camarão","",200],["Chouricinho","",250],["Pão de alho","",280],["Sopa do dia","",200]]],
+["Carnes grelhadas",[["Picanha","350 g",1500],["Picanha","900 g",3500],["Alcatra","300 g",1100],["T-Bone","400 g",1200],["Costeletas de porco","300 g",750],["Entremeada","300 g",850],["Frango","½",550],["Frango inteiro","",1000],["Peito de frango","",650]]],
+["Mariscos grelhados",[["Camarão K","",1800],["Camarão S","",1200],["Lulas","",1150],["Peixe vermelho","450 g",900],["Peixe vermelho","650 g",1150],["Peixe vermelho","para 2",2000],["Peixe garoupa","",1050],["Peixe garoupa","para 2",2200],["Lagosta média","para 2",1500]]],
+["Outros pratos",[["Prego no prato","",500],["Hambúrguer","",500],["Chouriço grelhado com batata frita","",600]]],
+["Petiscos",[["Babalaza","200 g",250],["Moelas","",200],["Pescadinha frita","",200]]],
+["Acompanhantes",[["Arroz primavera","",200],["Puré de batata-doce","",200],["Vegetais salteados","",200],["Batata frita","",150],["Xima","",100],["Feijão preto","",100],["Quiabo","",100],["Couve salteada","",100],["Tseke","",100]]],
+["Refrigerantes",[["Refrigerante","",100],["Soda water","",120],["Água tónica","",110],["Compal","1 L",200],["Água Vumba","500 ml",100],["Água Vumba","1,5 L",150],["Água das Pedras","",200],["Sumo natural","",400],["Sumol","",120],["Tutti Frutti","",150],["Red Bull","",200]]],
+["Sidras",[["Savana Dry","",180],["Savana Lemon","",180],["Bernini garrafa","",180],["Brutal garrafa","",150],["Brutal lata","",200],["Hunters Gold","",160]]],
+["Cervejas",[["Heineken mini","",160],["Heineken lata","",150],["Txilar lata","",130],["Corona","",180],["Super Bock","",150],["Castle Lite","",150],["Stella","",180],["2M lata","",150],["2M mini","",120],["Impalinha","",110],["Laurentina preta","",120]]],
+["Vinhos tintos",[["Silk & Spice","",1900],["Portada","",1300],["Pé Tinto","",900],["Borba","",1000],["Cabriz","",1200],["Fat Bastard","",800],["Musch Mais","",2200],["Segredos de São Miguel","",1500],["Segredos de São Miguel Reserva","",1900],["Reserva da Família","",1400]]],
+["Vinhos brancos",[["Silk & Spice","",1900],["Planalto","",1800],["Portada","",1300],["Cabriz","",1500],["Borba","",1000],["Pé Branco","",900],["Boehendal","",1700]]],
+["Vinhos verdes",[["Aveleda Alvarinho","",1200],["Gazela","",950],["Gatão","",900],["Casal Garcia","",1000]]],
+["Espumantes",[["J.C. Le Domaine","",1300],["Anabelle","",1000],["Tosti","",1900],["Chandon","",700],["Moët & Chandon","",10000],["Veuve Clicquot","",9000]]],
+["Cocktails",[["Margarita","",350],["Piña Colada","",350],["Sex on the Beach","",400],["Long Island Ice Tea","",450],["Mojito","",400],["Blue Lagoon","",350],["Strawberry Daiquiri","",400],["Frozen de manga","",400]]],
+["Caipirinhas",[["Maracujá","",450],["Limão","",350],["Morango","",450],["Ananás","",350]]],
+["Sangrias",[["Dark Love","",1500],["Dark White","",1500],["Viva la Vida","",1800]]],
+["Whisky",[["John Walker Red","",150],["John Walker Black","",250],["John Walker Gold","",500],["Jameson Original","",150],["Jameson Black Barrel","",300],["Jack Daniel's","",200],["Macallan","",150],["Chivas Regal","",200],["Hennessy V.S. conhaque","",300]]],
+["Gin",[["Gordon's","",150],["Gordon's Pink","",200],["Tanqueray","",200],["Bombay","",200],["Hendrick's","",250],["Beefeater Pink","",250],["Beefeater Dry","",200]]],
+["Aperitivos",[["1920","",150],["São Domingos","",150],["Amarula","",150],["Martini","",150],["Jägermeister","",220],["Tequila Silver","",200],["Tequila Reposado","",200],["Tequila Chocolate","",250]]],
+["Vodka",[["Absolut","",200]]]
+];
+const T=(p,e)=>`<span class="pt">${p}</span><span class="en">${e??p}</span>`;
+const fmt=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"\u00a0");
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const CEN={"Entradas":"Starters","Carnes grelhadas":"Grilled meats","Mariscos grelhados":"Grilled seafood","Outros pratos":"Other dishes","Petiscos":"Snacks","Acompanhantes":"Sides","Refrigerantes":"Soft drinks","Sidras":"Ciders","Cervejas":"Beers","Vinhos tintos":"Red wines","Vinhos brancos":"White wines","Vinhos verdes":"Vinho verde","Espumantes":"Sparkling wines","Sangrias":"Sangrias","Aperitivos":"Aperitifs"};
+const EN={"Chamussas":"Samosas","Rissóis de camarão":"Shrimp rissoles","Chouricinho":"Chorizo","Pão de alho":"Garlic bread","Sopa do dia":"Soup of the day","Alcatra":"Rump steak","Costeletas de porco":"Pork chops","Entremeada":"Pork belly","Frango":"Chicken","Frango inteiro":"Whole chicken","Peito de frango":"Chicken breast","Camarão K":"Prawns K","Camarão S":"Prawns S","Lulas":"Squid","Peixe vermelho":"Red fish","Peixe garoupa":"Grouper","Lagosta média":"Medium lobster","Prego no prato":"Prego steak plate","Hambúrguer":"Hamburger","Chouriço grelhado com batata frita":"Grilled chorizo with fries","Moelas":"Gizzards","Pescadinha frita":"Fried whiting","Arroz primavera":"Spring rice","Puré de batata-doce":"Sweet potato purée","Vegetais salteados":"Sautéed vegetables","Batata frita":"French fries","Xima":"Xima","Feijão preto":"Black beans","Quiabo":"Okra","Couve salteada":"Sautéed greens","Refrigerante":"Soft drink","Água tónica":"Tonic water","Água Vumba":"Vumba water","Sumo natural":"Fresh juice","Bernini garrafa":"Bernini bottle","Brutal garrafa":"Brutal bottle","Brutal lata":"Brutal can","Heineken lata":"Heineken can","Txilar lata":"Txilar can","2M lata":"2M can","Laurentina preta":"Laurentina Preta","Segredos de São Miguel Reserva":"Segredos de São Miguel Reserve","Reserva da Família":"Family Reserve","Frozen de manga":"Frozen mango","Maracujá":"Passion fruit","Limão":"Lime","Morango":"Strawberry","Ananás":"Pineapple","Hennessy V.S. conhaque":"Hennessy V.S. cognac"};
+const DESC={
+"Chamussas":["Triângulos de massa fina, fritos e estaladiços","Thin, crispy fried pastry triangles"],
+"Rissóis de camarão":["Massa crocante recheada com camarão","Crispy pastry filled with shrimp"],
+"Chouricinho":["Chouriço fatiado e grelhado","Sliced, grilled chorizo"],
+"Pão de alho":["Pão tostado com manteiga de alho","Toasted bread with garlic butter"],
+"Sopa do dia":["Pergunte ao empregado qual é a de hoje","Ask your waiter what today's soup is"],
+"Picanha":["Corte nobre de vaca, grelhado","Prime beef cut, grilled"],
+"Alcatra":["Bife de alcatra grelhado","Grilled rump steak"],
+"T-Bone":["Bife com osso, grelhado","Bone-in steak, grilled"],
+"Costeletas de porco":["Costeletas de porco grelhadas","Grilled pork chops"],
+"Entremeada":["Entremeada de porco grelhada","Grilled pork belly"],
+"Frango":["Meio frango grelhado","Grilled half chicken"],
+"Frango inteiro":["Frango inteiro grelhado","Grilled whole chicken"],
+"Peito de frango":["Peito de frango grelhado","Grilled chicken breast"],
+"Camarão K":["Camarão grelhado","Grilled prawns"],
+"Camarão S":["Camarão grelhado","Grilled prawns"],
+"Lulas":["Lulas grelhadas","Grilled squid"],
+"Peixe vermelho":["Peixe grelhado","Grilled fish"],
+"Peixe garoupa":["Garoupa grelhada","Grilled grouper"],
+"Lagosta média":["Lagosta grelhada","Grilled lobster"],
+"Prego no prato":["Bife em molho, servido no prato","Steak in sauce, served on a plate"],
+"Hambúrguer":["Hambúrguer de carne grelhado","Grilled beef burger"],
+"Chouriço grelhado com batata frita":["Chouriço grelhado acompanhado de batata frita","Grilled chorizo served with fries"],
+"Moelas":["Moelas guisadas","Stewed gizzards"],
+"Pescadinha frita":["Pescadinhas fritas e crocantes","Crispy fried whiting"],
+"Arroz primavera":["Arroz com legumes","Rice with vegetables"],
+"Puré de batata-doce":["Puré cremoso de batata-doce","Creamy sweet potato purée"],
+"Vegetais salteados":["Legumes salteados","Sautéed vegetables"],
+"Batata frita":["Batata frita crocante","Crispy french fries"],
+"Xima":["Papa de milho tradicional","Traditional maize porridge"],
+"Feijão preto":["Feijão preto cozinhado","Cooked black beans"],
+"Quiabo":["Quiabo cozinhado","Cooked okra"],
+"Couve salteada":["Couve salteada","Sautéed greens"],
+"Margarita":["Tequila, triple sec e sumo de lima","Tequila, triple sec and lime juice"],
+"Piña Colada":["Rum, leite de coco e ananás","Rum, coconut milk and pineapple"],
+"Sex on the Beach":["Vodka, licor de pêssego, laranja e cranberry","Vodka, peach liqueur, orange and cranberry"],
+"Long Island Ice Tea":["Vodka, gin, rum, tequila, triple sec e cola","Vodka, gin, rum, tequila, triple sec and cola"],
+"Mojito":["Rum, hortelã, lima e açúcar","Rum, mint, lime and sugar"],
+"Blue Lagoon":["Vodka, curaçau azul e limonada","Vodka, blue curaçao and lemonade"],
+"Strawberry Daiquiri":["Rum, morango e lima","Rum, strawberry and lime"],
+"Frozen de manga":["Manga batida com gelo","Mango blended with ice"]};
+const CAIP={"Maracujá":["maracujá","passion fruit"],"Limão":["limão","lime"],"Morango":["morango","strawberry"],"Ananás":["ananás","pineapple"]};
+Object.entries(CAIP).forEach(([k,[p,e]])=>DESC["cai"+k]=[`Cachaça, ${p}, açúcar e gelo`,`Cachaça, ${e}, sugar and ice`]);
+const ICON={food:'<path d="M3 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3Zm0 0v7"/>',
+drinks:'<path d="M17 11h1a3 3 0 0 1 0 6h-1M9 12v6M13 12v6M14 7.5c-1 0-1.4.5-3 .5s-2-.5-3-.5-1.7.5-2.5.5a2.5 2.5 0 0 1 0-5c.8 0 1.6.5 2.5.5S9.4 2 11 2s2 1.5 3 1.5 1.7-.5 2.5-.5a2.5 2.5 0 0 1 0 5c-.8 0-1.5-.5-2.5-.5ZM5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/>',
+wine:'<path d="M8 22h8M7 10h10M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/>',
+cock:'<path d="M8 22h8M12 11v11m7-19-7 8-7-8Z"/>',
+spirit:'<path d="M15.2 22H8.800a2 2 0 0 1-2-1.800L5 3h14l-1.8 17.200a2 2 0 0 1-2 1.800ZM6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>'};
+const GROUPS=[["Comida","Food",0,6,"food"],["Bebidas","Drinks",6,9,"drinks"],["Vinhos","Wines",9,13,"wine"],["Cocktails","Cocktails",13,16,"cock"],["Destilados","Spirits",16,20,"spirit"]];
+const list=document.getElementById("list"),pill=document.getElementById("pill"),subs=document.getElementById("subs");
+const catName=c=>T(esc(c),CEN[c]);
+MENU.forEach(([cat,items],i)=>{
+  list.insertAdjacentHTML("beforeend",`<section class="row" id="c${i}" data-i="${i}"><div class="label"><b>${catName(cat)}</b></div><div class="items">`+
+  items.map(([nm,d,p],k)=>{const ds=DESC[cat==="Caipirinhas"?"cai"+nm:nm];
+    return `<div class="item" id="i${i}-${k}"><div class="info"><h3>${T(esc(nm),esc(EN[nm]||nm))}</h3>${ds?`<p>${T(ds[0],ds[1])}</p>`:""}</div><div class="meta">${d?`<small>${T(esc(d),esc(d.replace("para ","for ").replace(",",".")))}</small>`:""}<div class="price">${fmt(p)}<i>MT</i></div></div></div>`}).join("")+`</div></section>`);
+});
+pill.innerHTML=GROUPS.map((g,k)=>`<button data-g="${k}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICON[g[4]]}</svg>${T(g[0],g[1])}</button>`).join("");
+let lock=false,tm;
+const root=document.documentElement;
+function release(){lock=false;root.style.scrollSnapType="";update();if(afterJump){const f=afterJump;afterJump=null;f()}}
+let afterJump=null;
+function jump(i,el,cb){lock=true;afterJump=cb||null;root.style.scrollSnapType="none";setActive(i);clearTimeout(tm);tm=setTimeout(release,1500);(el||document.getElementById("c"+i)).scrollIntoView({behavior:"smooth",block:el?"center":"start"})}
+addEventListener("scroll",()=>{if(lock){clearTimeout(tm);tm=setTimeout(release,160)}},{passive:true});
+pill.onclick=e=>{const b=e.target.closest("button");if(b)jump(GROUPS[b.dataset.g][2])};
+subs.onclick=e=>{const b=e.target.closest("button");if(b)jump(+b.dataset.i)};
+let curG=-2;
+let curI=-9;
+function setActive(i){if(i===curI)return;curI=i;
+  const g=GROUPS.findIndex(x=>i>=x[2]&&i<x[3]);
+  document.getElementById("dock").classList.toggle("off",i<0);
+  [...pill.children].forEach((b,k)=>b.classList.toggle("on",k===g));
+  if(g!==curG){curG=g;subs.hidden=g<0;subs.innerHTML=g<0?"":MENU.slice(GROUPS[g][2],GROUPS[g][3]).map((m,k)=>`<button data-i="${GROUPS[g][2]+k}">${catName(m[0])}</button>`).join("")}
+  subs.querySelectorAll("button").forEach(b=>b.classList.toggle("on",+b.dataset.i===i));
+  const on=subs.querySelector(".on");if(on)subs.scrollTo({left:on.offsetLeft-30,behavior:lock?"auto":"smooth"});
+}
+const secs=[...document.querySelectorAll("section")],cover=document.getElementById("top");
+let raf=0;
+function update(){raf=0;if(lock)return;const mid=innerHeight/2;
+  if(cover.getBoundingClientRect().bottom>mid){setActive(-1);return}
+  let cur=0;secs.forEach((s,k)=>{if(s.getBoundingClientRect().top<=mid)cur=k});setActive(cur)}
+addEventListener("scroll",()=>{if(!raf)raf=requestAnimationFrame(update)},{passive:true});
+addEventListener("resize",update);addEventListener("pageshow",update);update();
+const q=document.getElementById("q"),res=document.getElementById("res");
+const norm=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const IDX=[];
+MENU.forEach(([cat,items],i)=>items.forEach(([nm,d,p],k)=>{const ds=DESC[cat==="Caipirinhas"?"cai"+nm:nm]||["",""],en=EN[nm]||nm,cen=CEN[cat]||cat;
+  IDX.push({i,k,nm,en,cat,cen,p,nk:norm(nm+" "+en),key:norm([nm,en,cat,cen,ds[0],ds[1]].join(" "))})}));
+function renderRes(){
+  const t=norm(q.value).trim().split(/\s+/).filter(Boolean);
+  if(!t.length){res.hidden=true;res.innerHTML="";return}
+  const en=root.dataset.l==="en",sc=x=>t.every(w=>x.nk.includes(w))?1:0;
+  const r=IDX.filter(x=>t.every(w=>x.key.includes(w))).sort((a,b)=>sc(b)-sc(a)).slice(0,8);
+  res.hidden=false;
+  res.innerHTML=r.length?r.map(x=>`<button data-i="${x.i}" data-k="${x.k}"><span><b>${esc(en?x.en:x.nm)}</b><small>${esc(en?x.cen:x.cat)}</small></span><i>${fmt(x.p)} MT</i></button>`).join(""):`<p>${en?"No results":"Sem resultados"}</p>`;
+}
+function chalk(el){
+  document.querySelectorAll(".chalk").forEach(x=>x.remove());
+  const px=14,py=10,W=el.offsetWidth+px*2,H=el.offsetHeight+py*2,cx=W/2,cy=H/2,rx=W/2-3,ry=H/2-3,N=72;let d="";
+  for(let k=0;k<=N;k++){const a=-1.9+(k/N)*(Math.PI*2+.6),f=1+.025*Math.sin(k*1.7)+.02*Math.sin(k*.6+1)+.05*(k/N);
+    d+=(k?"L":"M")+(cx+rx*f*Math.cos(a)).toFixed(1)+" "+(cy+ry*f*Math.sin(a)).toFixed(1)}
+  el.insertAdjacentHTML("beforeend",`<svg class="chalk" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="left:${-px}px;top:${-py}px"><path d="${d}"/></svg>`);
+  const s=el.lastElementChild,p=s.querySelector("path"),len=p.getTotalLength();
+  p.style.strokeDasharray=len;p.style.strokeDashoffset=len;p.getBoundingClientRect();
+  p.style.transition="stroke-dashoffset 1s ease-out";p.style.strokeDashoffset=0;
+  setTimeout(()=>{s.classList.add("fade");setTimeout(()=>s.remove(),800)},3800);
+}
+q.oninput=renderRes;q.onfocus=renderRes;
+document.getElementById("dl").onclick=()=>{const t=document.title;document.title="Menu Rio Restaurante e Bar";const back=()=>{document.title=t;removeEventListener("afterprint",back)};addEventListener("afterprint",back);print()};
+q.onkeydown=e=>{if(e.key==="Enter"){const b=res.querySelector("button");if(b)b.click()}};
+res.onclick=e=>{const b=e.target.closest("button");if(!b)return;
+  const el=document.getElementById(`i${b.dataset.i}-${b.dataset.k}`);
+  q.blur();q.value="";res.hidden=true;res.innerHTML="";jump(+b.dataset.i,el,()=>chalk(el))};
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.hidden=true});
+const langBtns=[...document.querySelectorAll("#lang button")];
+function setLang(l){document.documentElement.dataset.l=l;q.placeholder=l==="en"?"Something in mind?":"Algo em mente?";renderRes();document.documentElement.lang=l;langBtns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));try{localStorage.setItem("lang",l)}catch(e){}}
+langBtns.forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+let sv=null;try{sv=localStorage.getItem("lang")}catch(e){}
+setLang(sv==="en"?"en":"pt");
+</script>
+</body>
+</html>
