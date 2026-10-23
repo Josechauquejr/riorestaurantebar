@@ -48,9 +48,10 @@ section.row+section.row{border-top:1px solid rgba(245,220,188,.3)}
   text-transform:uppercase;line-height:1.35;overflow-wrap:anywhere}
 .cover .label{display:flex;align-items:center;padding-top:0}
 .cover .label b{position:static}
-.cover .main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 18px 14vh 22px}
-.brand{margin:0}
-.logo{display:block;width:min(76vw,370px);height:auto;margin:0}
+.cover .main{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;padding:0 18px 14vh 22px}
+.brand{width:100%;min-width:0;margin:0}
+.logo{display:block;width:100%;max-width:370px;height:auto;margin:0}
+@media(max-width:600px){.brand{overflow:hidden}.cover .logo{width:70%;transform:translateX(-8.5%)}}
 .sub{margin:16px 0 32px;font-size:clamp(10px,2.8vw,13px);font-weight:500;letter-spacing:.14em;text-transform:uppercase;line-height:1.7}
 .btn{color:var(--cream);text-decoration:none;font-weight:600;font-size:14px;padding:12px 24px;border:1.5px solid var(--cream);border-radius:999px}
 .btn:hover{background:var(--cream);color:var(--g3)}
