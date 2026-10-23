@@ -106,7 +106,7 @@ footer span{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .fbtns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
 .fbtns .ig,.fbtns .dl{margin:0}
-.dl{display:inline-flex;align-items:center;gap:8px;background:none;border:1.5px solid var(--cream);color:var(--cream);padding:10px 20px;border-radius:999px;font:600 14px 'Montserrat',sans-serif;cursor:pointer}
+.dl{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:none;border:1.5px solid var(--cream);color:var(--cream);padding:10px 20px;border-radius:999px;font:600 14px 'Montserrat',sans-serif;cursor:pointer}
 .dl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .dl:hover{background:var(--cream);color:var(--g3)}
 footer .dl span{font-size:14px;letter-spacing:0;text-transform:none}
@@ -145,7 +145,7 @@ footer .dl span{font-size:14px;letter-spacing:0;text-transform:none}
 </header>
 <main id="list"></main>
 <footer><b>Rio</b><span>Restaurante &amp; Bar</span>
-  <div class="fbtns"><a class="ig" href="https://www.instagram.com/riorestauranteebar?exln=MWljdWY0emJ3Ymh3eg==" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><span class="pt">Seguir no Instagram</span><span class="en">Follow on Instagram</span></a><button class="dl" id="dl" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16"/></svg><span class="pt">Baixar menu (PDF)</span><span class="en">Download menu (PDF)</span></button></div></footer>
+  <div class="fbtns"><a class="ig" href="https://www.instagram.com/riorestauranteebar?exln=MWljdWY0emJ3Ymh3eg==" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><span class="pt">Seguir no Instagram</span><span class="en">Follow on Instagram</span></a><a class="dl" id="dl" href="menu-rio-pt.pdf" download="Menu-Rio-PT.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16"/></svg><span class="pt">Baixar menu (PDF)</span><span class="en">Download menu (PDF)</span></a></div></footer>
 <div id="dock" class="off"><div id="subs" hidden></div><nav id="pill" class="glass" aria-label="Categorias / Categories"></nav></div>
 <script>
 // Cada categoria: [nome, [[item, detalhe, preço em MT], ...]]
@@ -283,14 +283,14 @@ function chalk(el){
   setTimeout(()=>{s.classList.add("fade");setTimeout(()=>s.remove(),800)},3800);
 }
 q.oninput=renderRes;q.onfocus=renderRes;
-document.getElementById("dl").onclick=()=>{const t=document.title;document.title="Menu Rio Restaurante e Bar";const back=()=>{document.title=t;removeEventListener("afterprint",back)};addEventListener("afterprint",back);print()};
+const dlBtn=document.getElementById("dl");
 q.onkeydown=e=>{if(e.key==="Enter"){const b=res.querySelector("button");if(b)b.click()}};
 res.onclick=e=>{const b=e.target.closest("button");if(!b)return;
   const el=document.getElementById(`i${b.dataset.i}-${b.dataset.k}`);
   q.blur();q.value="";res.hidden=true;res.innerHTML="";jump(+b.dataset.i,el,()=>chalk(el))};
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))res.hidden=true});
 const langBtns=[...document.querySelectorAll("#lang button")];
-function setLang(l){document.documentElement.dataset.l=l;q.placeholder=l==="en"?"Something in mind?":"Algo em mente?";renderRes();document.documentElement.lang=l;langBtns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));try{localStorage.setItem("lang",l)}catch(e){}}
+function setLang(l){document.documentElement.dataset.l=l;dlBtn.href=l==="en"?"menu-rio-en.pdf":"menu-rio-pt.pdf";dlBtn.setAttribute("download",l==="en"?"Menu-Rio-EN.pdf":"Menu-Rio-PT.pdf");q.placeholder=l==="en"?"Something in mind?":"Algo em mente?";renderRes();document.documentElement.lang=l;langBtns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));try{localStorage.setItem("lang",l)}catch(e){}}
 langBtns.forEach(b=>b.onclick=()=>setLang(b.dataset.l));
 let sv=null;try{sv=localStorage.getItem("lang")}catch(e){}
 setLang(sv==="en"?"en":"pt");
